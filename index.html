@@ -13,7 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <div class="overlay"></div>
+
 
   <div class="wrapper">
 
@@ -23,15 +23,15 @@
       <nav class="gnb">
         <h1 class="asset1"><img src="./images/logo.svg"></h1>
         <ul class="gnb-list">
-          <li class="gnb-item">
-            <a>NEW</a>
-            <section class="gnb-item-menu">
+          <li class="gnb-item" >
+            <a onclick="setMenu('tab1')">NEW</a>
+            <section class="gnb-item-menu" id="menu1">
               <!-- menu-img -->
               <div class="menu-slider">
-                <img src="./images/menu-img/nav.jpg" alt="nav1">
-                <img src="./images/menu-img/nav2.jpg" alt="nav2">
-                <img src="./images/menu-img/nav3.jpg" alt="nav3">
-                <img src="./images/menu-img/nav4.jpg" alt="nav4">
+                <div class="slide"><img src="./images/menu-img/nav.jpg" alt="nav1"></div>
+                <div class="slide"><img src="./images/menu-img/nav2.jpg" alt="nav2"></div>
+                <div class="slide"><img src="./images/menu-img/nav3.jpg" alt="nav3"></div>
+                <div class="slide"><img src="./images/menu-img/nav4.jpg" alt="nav4"></div>
               </div>
               <!-- menu-main -->
               <ul class="main-menu">
@@ -79,8 +79,8 @@
             </section>
           </li>
           <li class="gnb-item">
-            <a>컬렉션</a>
-            <section class="gnb-item-menu">
+            <a onclick="setMenu('tab2')">컬렉션</a>
+            <section class="gnb-item-menu" id="menu2">
               <div class="s-menu-wrapper">
                 <ul class="s-menu-list">
                   <li class="s-menu-first-item"><a href=""><strong>전체보기</strong></a></li>
@@ -178,10 +178,23 @@
 
       <section class="intro-event">
         <a href=""><img src="./main/8th_anniversary_intro.jpg"></a>
+        <div class="intro-txt">
+          <h4>
+            ADER ERROR 8th '141218' Collection
+          </h4>
+          <div class="intro-txt-box">
+            <p>자세히 보기</p>
+            <p>></p>
+          </div>
+          <div class="intro-txt-box">
+            <p>제품 바로 보기</p>
+            <p>></p>
+          </div>
+        </div>
       </section>
     </main>
   </div>
-
+  <div class="overlay" id="overlaybox" onclick="setMenu('overlayon')"></div>
 
   <!-- script -->
   <script src="./js/script.js"></script>
