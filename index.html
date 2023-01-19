@@ -6,10 +6,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADERERROR | 아더에러 공식 온라인 스토어</title>
   <!-- style -->
-  <link rel="stylesheet" href="./style/">
+  <link rel="stylesheet" href="./style/style.css">
+  <!-- fonts style -->
+  <link rel="stylesheet" href="./font/stylesheet.css">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+  <div class="overlay"></div>
+
+  <div class="wrapper">
+
+
+    <!-- header -->
+    <header>
+      <nav class="gnb">
+        <h1 class="asset1"><img src="./images/logo.svg"></h1>
+        <ul class="gnb-list">
+          <li class="gnb-item">
+            <a>NEW</a>
+            <section class="gnb-item-menu">
+              <!-- menu-img -->
+              <div class="menu-slider">
+                <img src="./images/menu-img/nav.jpg" alt="nav1">
+                <img src="./images/menu-img/nav2.jpg" alt="nav2">
+                <img src="./images/menu-img/nav3.jpg" alt="nav3">
+                <img src="./images/menu-img/nav4.jpg" alt="nav4">
+              </div>
+              <!-- menu-main -->
+              <ul class="main-menu">
+                <h2>What's new</h2>
+                <li>
+                  <a class="main-menu-item"  href="">
+                    <small>아더 해운대 플러그샵 오픈</small>
+                    <p>New ADER Plug Shop Open</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="main-menu-item" href="">
+                    <small>아더에러 X 컨버스</small>
+                    <p>‘Create Next : The new is not new’ 발매</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="main-menu-item" href="">
+                    <small>아더에러 창립 8주년</small>
+                    <p>ADER ERROR 8th ‘141218’ Collection</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="main-menu-item" href="">
+                    <small>아더에러X자라의 2nd 콜라보레이션</small>
+                    <p>ADER X ZARA ‘CYCLE A TO Z’ 2nd COLLECTION</p>
+                  </a>
+                </li>
+              </ul>
+              <!-- menu img -->
+              <ul class="menu-img">
+                <li class="menu-img-item">
+                  <a href=""><img src="./images/menu-img/menu1.jpg" alt="menuimg1"><br>컬렉션</a>
+                </li>
+                <li class="menu-img-item">
+                  <a href=""><img src="./images/menu-img/menu2.jpg" alt="menuimg2"><br>에디토리얼</a>
+                </li>
+                <li class="menu-img-item">
+                  <a href=""><img src="./images/menu-img/menu3.jpg" alt="menuimg3"><br>런웨이</a>
+                </li>
+                <li class="menu-img-item">
+                  <a href=""><img src="./images/menu-img/menu4.jpg" alt="menuimg4"><br>콜라보레이션</a>
+                </li>
+              </ul>
+            </section>
+          </li>
+          <li class="gnb-item">
+            <a>컬렉션</a>
+            <section class="gnb-item-menu">
+              <div class="s-menu-wrapper">
+                <ul class="s-menu-list">
+                  <li class="s-menu-first-item"><a href=""><strong>전체보기</strong></a></li>
+                  <li class="s-menu-title-item"><a href="">TOP20</a></li>
+                  <li class="s-menu-title-item"><a href="">TENIT 라인</a></li>
+                  <li class="s-menu-title-item"><a href="">NEW LOGO</a></li>
+                  <li class="s-menu-title-item"><a href="">여성</a></li>
+                </ul>
+                <ul class="s-menu-list">
+                  <li class="s-menu-item"><a href="">의류</a></li>
+                  <li><a href="">아우터</a></li>
+                  <li><a href="">니트웨어</a></li>
+                  <li><a href="">티셔츠</a></li>
+                  <li><a href="">스웨트셔츠 & 후드</a></li>
+                  <li><a href="">셔츠</a></li>
+                  <li><a href="">후드</a></li>
+                  <li><a href="">데님</a></li>
+                  <li><a href="">하의</a></li>
+                </ul>
+                <ul class="s-menu-list">
+                  <li class="s-menu-item"><a href="">가방</a></li>
+                  <li><a href="">백팩</a></li>
+                  <li><a href="">크로스백</a></li>
+                  <li><a href="">숄더백</a></li>
+                  <li><a href="">토드백</a></li>
+                  <li><a href="">지갑</a></li>
+                </ul>
+                <ul class="s-menu-list">
+                  <li class="s-menu-item"><a href="">슈즈</a></li>
+                  <li><a href="">레이스업</a></li>
+                  <li><a href="">로퍼</a></li>
+                  <li><a href="">부츠</a></li>
+                </ul>
+                <ul class="s-menu-list">
+                  <li class="s-menu-item"><a href="">주얼리</a></li>
+                  <li><a href="">실버 주얼리</a></li>
+                  <li><a href="">패션 주얼리</a></li>
+                </ul>
+                <ul class="s-menu-list">
+                  <li class="s-menu-item"><a href="">악세서리</a></li>
+                  <li><a href="">모자</a></li>
+                  <li><a href="">양말</a></li>
+                  <li><a href="">벨트</a></li>
+                  <li><a href="">머플러</a></li>
+                </ul>
+              </div>
+              <a class="s-menu-logo" href="">
+                <img src="./images/menu-img/tenitline.jpg" alt="tenitline-logo">
+                <p>TENIT 라인</p>
+              </a>
+            </section>
+          </li>
+          <li class="gnb-item"><a href="">오리진</a></li>
+          <li class="gnb-item"><a href="">슈즈 & 가방</a></li>
+          <li class="gnb-item"><a href="">주얼리</a></li>
+          <li class="gnb-item"><a href="">에이벤토리</a></li>
+          <li class="gnb-item"><a href="">선물제안</a></li>
+          <li class="gnb-item"><a href="">콜라보레이션</a></li>
+        </ul>
+        <ul class="gnb-icon-group">
+          <li class="gnb-icon-item"><a href="">매장보기</a></li>
+          <li class="gnb-icon-item"><a href="">Language></a></li>
+          <li class="gnb-icon-item"><a href=""><img src="./images/icon-btn/ico-search2.svg" alt="search"></a></li>
+          <li class="gnb-icon-item"><a href=""><img src="./images/icon-btn/ico-cart2.svg" alt="cart"></a></li>
+          <li class="gnb-icon-item"><a href=""><img src="./images/icon-btn/ico-login2.svg" alt="login"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <!-- main -->
+    <main>
+      <section class="vid-box">
+        <video class="vid" src="./main/f6ca0030-51cfc75e.mp4" autoplay muted loop>Ader Error</video>
+        <div class="vid-txt">
+          <h4>
+            ADER ERROR x CONVERSE<br>
+            ‘Create Next : The new is not new’
+          </h4>
+          <div class="vid-txt-box">
+            <p>아더에러 X 컨버스 1st Collection</p>
+            <p>></p>
+          </div>
+          <div class="vid-txt-box">
+            <p>제품 바로 보기</p>
+            <p>></p>
+          </div>
+          <div class="vid-txt-box">
+            <p>발매 일정</p>
+            <p>></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-event">
+        <a href=""><img src="./main/8th_anniversary_intro.jpg"></a>
+      </section>
+    </main>
+  </div>
+
+
   <!-- script -->
-  <script src="./style/style.css"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

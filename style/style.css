@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Futura LT';
+  font-size: 14px;
+}
+
+body {
+  min-width: 1903px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.overlay.on {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* z-index: 1; */
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.empty {
+  height: 3000px;
+}
+
+.gnb {
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 50px;
+  padding: 0 10px;
+  border-bottom: 1px solid black;
+  vertical-align: baseline;
+}
+
+.asset1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -1px;
+  left: 20px;
+}
+
+.asset1 img {
+  height: 12px;
+
+}
+
+.gnb-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 140px;
+}
+
+.gnb-item a {
+  font-weight: 500;
+  font-size: 13.5px;
+  padding-right: 55px;
+}
+
+.gnb-item > a:after {
+  height: 50px;
+  position: relative;
+  content: "+";
+  top: -2px;
+  left: 8px;
+}
+
+.gnb-icon-group {
+  display: flex;
+  align-items: center;
+}
+
+.gnb-icon-item a {
+  font-size: 14px;
+  padding-right: 30px ;
+}
+
+.gnb-icon-item img {
+  height: 19.84px;
+  position: relative;
+  top: 2px;
+}
+
+.gnb-item-menu {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  left: 0;
+  padding: 20px;
+  border-bottom: 1px solid #000;
+  display: none;
+  z-index: 100;
+}
+
+.gnb-item-menu.on {
+  display: flex;
+}
+
+.menu-slider img {
+  top: 50%;
+  left: 280px;
+  transform: translateY(-50%);
+  height: 200px;
+  position: absolute;
+}
+
+.main-menu {
+  width: 290px;
+  position: relative;
+  top: 5px;
+  /* left: 443px; */
+}
+
+.main-menu h2 {
+  font-weight: 500;
+  font-size: 13px;
+  height: 35px;
+}
+
+.main-menu li {
+  padding-top: 8px;
+  padding-bottom: 20px;
+  border-top: 1px solid #000;
+}
+
+.main-menu li:last-of-type {
+  padding: 0;
+}
+
+.main-menu-item small{
+  font-size: 11px;
+}
+
+.main-menu-item p {
+  font-size: 13px;
+}
+
+.menu-img {
+  display: flex;
+  position: relative;
+  align-items: center;
+  right: 120px;
+  top: 17px;
+}
+
+.menu-img-item {
+  text-align: center;
+}
+
+.menu-img-item img {
+  height: 200px;
+  margin: 0 7px;
+}
+
+.s-menu-wrapper {
+  margin: 0 auto;
+  display: flex;
+}
+
+.s-menu-list {
+  margin: 0 30px;
+}
+
+.s-menu-list li {
+  height: 35px;
+}
+
+.s-menu-title-item a {
+  font-weight: 600;
+}
+
+.s-menu-first-item {
+  margin-bottom: 35px;
+  text-decoration: underline;
+}
+
+.s-menu-item a {
+  font-weight: 900;
+}
+
+.s-menu-logo p {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.vid {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: -2;
+  top: 50px;
+}
+
+.vid-txt {
+  width: 250px;
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  z-index: -1;
+}
+
+.vid-txt p {
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+.vid-txt h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.vid-txt-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-event img {
+  width: 100%;
+}
