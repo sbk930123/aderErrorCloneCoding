@@ -6,10 +6,6 @@
   font-size: 14px;
 }
 
-body {
-  min-width: 1903px;
-}
-
 a {
   text-decoration: none;
   color: #000;
@@ -18,6 +14,10 @@ a {
 
 li {
   list-style: none;
+}
+
+.wrapper {
+  min-width: 1903px;
 }
 
 .empty {
@@ -37,6 +37,7 @@ li {
   border-bottom: 1px solid black;
   vertical-align: baseline;
   z-index: 100;
+  min-width: 1903px;
 }
 
 .asset1 {
@@ -57,9 +58,10 @@ li {
   align-items: center;
   position: relative;
   left: 140px;
+  min-width: 930px;
 }
 
-.gnb-item a {
+.gnb-item > a {
   font-weight: 500;
   font-size: 13.5px;
   padding-right: 55px;
@@ -76,6 +78,7 @@ li {
 .gnb-icon-group {
   display: flex;
   align-items: center;
+  min-width: 337px;
 }
 
 .gnb-icon-item a {
@@ -190,6 +193,11 @@ li {
   font-weight: 900;
 }
 
+.s-menu-logo {
+  position: relative;
+  right: 100px;
+}
+
 .s-menu-logo p {
   margin: 20px 0;
   text-align: center;
@@ -197,6 +205,10 @@ li {
 
 .s-menu-logo img {
   height: 200px;
+}
+
+#tenit-img {
+  top: 40px;
 }
 
 #originline-img {
